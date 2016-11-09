@@ -27,8 +27,21 @@
         android:layout_alignParentRight="true"/>
         -->
 
+    <!--
     <com.pengboyao.androidnote.CustomView.SearchView.SearchView
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
+     -->
+    <com.pengboyao.androidnote.CustomView.Bezier.Bezier4
+        android:id="@+id/bezier4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
 
+    <Button
+        android:id="@+id/swith_mode"
+        android:text="switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"/>
 </RelativeLayout>

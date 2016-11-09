@@ -2,8 +2,10 @@ package com.pengboyao.androidnote;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
 import android.widget.Button;
 
+import com.pengboyao.androidnote.CustomView.Bezier.Bezier4;
 import com.pengboyao.androidnote.CustomView.CheckView;
 import com.pengboyao.androidnote.CustomView.PieView;
 
@@ -12,6 +14,10 @@ public class MainActivity extends AppCompatActivity {
     private CheckView checkView;
     private Button btn_check;
     private Button btn_unCheck;
+
+    private Bezier4 bezier4;
+    private Button btn_switch;
+    private boolean bSwitch = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,6 +29,8 @@ public class MainActivity extends AppCompatActivity {
 
         //CheckView Test
 //        CheckViewTest();
+
+        checkBezier4();
     }
 
 //    private void PieViewTest(){
@@ -62,4 +70,17 @@ public class MainActivity extends AppCompatActivity {
 //            }
 //        });
 //    }
+
+    private void checkBezier4(){
+        bezier4 = (Bezier4) findViewById(R.id.bezier4);
+
+        btn_switch = (Button)findViewById(R.id.swith_mode);
+        btn_switch.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                bezier4.setMode(bSwitch);
+                bSwitch = !bSwitch;
+            }
+        });
+    }
 }

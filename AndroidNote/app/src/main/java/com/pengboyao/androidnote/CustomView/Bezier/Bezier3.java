@@ -13,7 +13,7 @@ import android.view.View;
  * @类名:
  * @作者: bobbyyyao
  * @时间: 2016/11/9  16:00
- * @功能描述:
+ * @功能描述:圆形变心形
  */
 public class Bezier3 extends View {
     private static final float C = 0.551915024494f;     // 一个常量，用来计算绘制圆形贝塞尔曲线控制点的位置

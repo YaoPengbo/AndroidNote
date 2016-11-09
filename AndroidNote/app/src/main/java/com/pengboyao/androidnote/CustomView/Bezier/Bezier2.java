@@ -14,7 +14,7 @@ import android.view.View;
  * @类名:
  * @作者: bobbyyyao
  * @时间: 2016/11/9  15:40
- * @功能描述:
+ * @功能描述: 二阶贝塞尔曲线
  */
 public class Bezier2 extends View {
 
